@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul,
+li {
+    list-style: none;
+}
+@font-face {
+    font-family: "Ms Madi";
+    src: url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+    font-family: "Lora";
+    src: url("'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+    unicode-range: U+AC00-D7A3, U+0030-0039;
+}
+@font-face {
+    font-family: "campton";
+    src: url("/path-to/CamptonExtraLight.woff2") format("woff2"), url("/path-to/CamptonExtraLight.woff") format("woff"), url("/path-to/CamptonExtraLight.ttf") format("truetype");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+body {
+    font-family: "Lora", "Noto Sans KR", sans-serif;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 500px;
+    color: white;
+}
+.container .header-container {
+    width: 100%;
+    height: 80px;
+    background-color: #141414;
+}
+/* .container .header-container:hover {
+} */
+.container .header-container .header-wrap {
+    display: flex;
+    height: 100px;
+    padding: 20px 0 0 30px;
+}
+
+.header-container .header-wrap .blog-logo {
+    flex: 1;
+}
+
+.header-container .header-wrap .blog-logo a {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-container .header-wrap .nav-wrap {
+    flex: 1;
+}
+
+.header-container .header-wrap .nav-wrap ul {
+    float: right;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.header-container .header-wrap .nav-wrap li {
+    float: left;
+    margin-right: 10px;
+}
+
+.header-container .header-wrap .nav-wrap li a {
+    font-family: "campton", sans-serif;
+    padding: 10px;
+}
+
+.header-container .header-wrap .nav-wrap li a:hover {
+    font-weight: 900;
+    text-decoration: underline;
+    border: solid white 0.5px;
+}
