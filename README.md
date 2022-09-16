@@ -1,1 +1,2 @@
-#ybeom.github.io
+-   post-thumbnail image는 500px\*500px 크기, 정방형 이미지 권장
+-   sub-post-title은 *'항상 26자 이내'*로 기입 권장
