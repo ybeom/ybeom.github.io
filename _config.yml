@@ -8,7 +8,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "개발자 와비"
 title_separator: "-"
-subtitle: "'Why?에서 시작해서 Be! 실현하는' 개발 일지
+subtitle: "'Why?에서 시작해서 Be! 실현하는' 개발 일지"
 email: ybeom.me@gmail.com
 name: "김영범(와비)"
 description: "누구나 주체적으로 사는 세상을 꿈꿉니다."
