@@ -3,5 +3,17 @@ layout: default
 ---
 
 <div class="post-index-container">
-    <div></div>
+    <header class="post-header-wrap">
+        <div class="post-thumbnail">
+            <img src="/assets/images/default_post_thumbnail.png" alt="대표 이미지" />
+            <div class="overlay-img"></div>
+        </div>
+        <div class="post-header-content">
+            <div class="post-tag"><a>{{page.tags}}</a></div>
+            <h1 class="post-title">{{page.title}}</h1>
+            <div class="post-date">{{page.date}}</div>
+        </div>
+    </header>
+    <article class="post-article-wrap">{{content}}</article>
+    <footer class="post-footer-wrap"></footer>
 </div>

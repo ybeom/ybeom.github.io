@@ -12,13 +12,6 @@ li {
     list-style: none;
 }
 @font-face {
-    font-family: "Ms Madi";
-    src: url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
-    font-weight: normal;
-    font-style: normal;
-    unicode-range: U+0041-005A, U+0061-007A;
-}
-@font-face {
     font-family: "Lora";
     src: url("'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'");
     unicode-range: U+0041-005A, U+0061-007A;
@@ -28,6 +21,11 @@ li {
     font-family: "Noto Sans KR";
     src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
     unicode-range: U+AC00-D7A3, U+0030-0039;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+    unicode-range: U+0041-005A, U+0061-007A;
 }
 @font-face {
     font-family: "campton";
@@ -51,7 +49,6 @@ body {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    height: 500px;
     color: white;
 }
 .container .header-container {
@@ -195,6 +192,7 @@ body {
 } */
 .overlay-img {
     position: absolute;
+    top: 0;
     background: white;
     height: 100%;
     width: 100%;
@@ -220,7 +218,7 @@ body {
     margin-left: 10px;
     padding: 55px 16px 0 16px;
 }
-.main-post-item .main-post-content .main-post-tag {
+.post-tag {
     display: inline-flex;
     flex-flow: row wrap;
 
@@ -229,14 +227,14 @@ body {
 
     margin-bottom: 16px;
 }
-.main-post-item .main-post-content .main-post-tag a {
+.post-tag a {
     padding: 10px 16px;
     margin: 4px 8px 4px 0;
     background-color: rgb(76 73 203 / 100%);
     overflow: hidden;
     border-radius: 50px;
 }
-.main-post-item:hover .main-post-content .main-post-tag a {
+.main-post-item:hover .main-post-content .post-tag a {
     background-color: rgb(76 73 203 / 50%);
 }
 .main-post-item .main-post-content .main-post-title {
