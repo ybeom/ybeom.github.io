@@ -1,12 +1,14 @@
 <div class="header-wrap">
     <div class="blog-logo">
-        <a href="http://localhost:4000/">whybe</a>
+        <a href="{{ / | relative_url }}">whybe</a>
     </div>
     <nav class="nav-wrap">
         <ul class="nav-box">
-            <li class="nav-item"><a>About</a></li>
-            <li class="nav-item"><a>WebDev</a></li>
-            <li class="nav-item"><a>Portfolio</a></li>
+            {% for link in site.data.navigations.main %}
+            <li class="nav-item">
+                <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
             <li class="nav-item">
                 <a class="avator-img-btn">
                     <img src="/assets/images/yb_avator.png" />

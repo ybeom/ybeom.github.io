@@ -8,10 +8,9 @@
     <div class="footer-nav">
         <nav>
             <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>WebDev</a></li>
-                <li><a>Portfolio</a></li>
+                {% for link in site.data.navigations.main %}
+                <li><a href="{{ link.url | relative_url }}">{{link.title}}</a></li>
+                {% endfor %}
             </ul>
         </nav>
     </div>

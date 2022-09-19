@@ -1,0 +1,9 @@
+main:
+    - title: home
+      url: /
+    - title: About
+      url: /
+    - title: WebDev
+      url: /
+    - title: Portfolio
+      url: /
