@@ -179,6 +179,12 @@ body {
 .main-post-item {
     position: relative;
 }
+.main-post-item > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
 .main-post-item .main-thumbnail {
     position: relative;
     flex: 1;
@@ -196,7 +202,7 @@ body {
     background: white;
     height: 100%;
     width: 100%;
-    z-index: 10;
+    z-index: 3;
     border-radius: 8px;
     opacity: 0;
 }
@@ -216,7 +222,7 @@ body {
     height: auto;
     /* background-color: green; */
     margin-left: 10px;
-    padding: 55px 16px 0 16px;
+    padding: 25px 16px 0 16px;
 }
 .post-tag {
     display: inline-flex;
@@ -244,7 +250,7 @@ body {
     text-decoration: underline;
 }
 .main-post-item .main-post-content .main-post-detail {
-    padding: 15px;
+    padding: 15px 0;
     color: #666669;
     font-weight: 500;
 }
@@ -254,6 +260,7 @@ body {
     font-weight: 100;
     font-size: 12px;
     float: right;
+    margin-right: 10px;
 }
 /* .main-container .posts-grid-container .main-post-item .main-post-content .main-post-render-btn {
     float: right;
@@ -276,6 +283,13 @@ body {
     color: black;
     cursor: pointer;
     height: 400px;
+    position: relative;
+}
+.sub-post-item > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
 }
 .sub-post-item .sub-thumbnail {
     position: relative;
