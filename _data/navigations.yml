@@ -1,8 +1,8 @@
 main:
     - title: home
       url: /
-    # - title: About
-    #   url: /
+    - title: About
+      url: /about
     # - title: WebDev
     #   url: /
     # - title: Portfolio

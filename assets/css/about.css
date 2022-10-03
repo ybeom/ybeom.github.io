@@ -1,0 +1,77 @@
+.about-header {
+    border-bottom: 1px white solid;
+    margin-right: 30px;
+    padding-bottom: 20px;
+}
+.about-sub-nav ul {
+    display: flex;
+    margin: 30px;
+}
+.about-sub-nav ul li {
+    margin-right: 30px;
+}
+.about-sub-nav ul li a {
+    font-size: 20px;
+    transition: all 1s ease-in-out;
+}
+.about-sub-nav ul li:hover a {
+    background-color: darkgray;
+    letter-spacing: 4px;
+}
+.profile-image {
+    margin-top: 80px;
+}
+.profile-image > div {
+    display: flex;
+    align-items: center;
+}
+.profile-image > div > div:last-child {
+    margin-left: 100px;
+}
+.profile-image > div > div:last-child h2 {
+    margin-bottom: 30px;
+}
+.profile-image > div > div:last-child li {
+    margin-bottom: 5px;
+    color: gainsboro;
+}
+.profile-image h1 {
+    font-size: 32px;
+}
+.profile-image .profile-image-wrap {
+    margin-top: 30px;
+    width: 300px;
+    overflow: hidden;
+}
+.profile-image .profile-image-wrap img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.profile-image .profile-image-wrap img:hover {
+    transform: scale(1.1);
+}
+.profile-detail {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+}
+.profile-detail section {
+    width: 45%;
+    min-height: 50px;
+    border: white 0.5px solid;
+    margin-top: 50px;
+    padding: 30px;
+}
+.profile-detail section:nth-child(2n-1) {
+    margin-right: 20px;
+}
+.profile-detail section ul li {
+    margin-top: 10px;
+    line-height: 25px;
+}
+.profile-detail section ul li em {
+    font-size: 14px;
+}
+.profile-detail section .director {
+    margin-top: 50px;
+}

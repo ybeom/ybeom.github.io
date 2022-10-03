@@ -445,6 +445,9 @@ p {
 }
 .footer-end {
     height: 50px;
+    text-align: right;
+    color: gainsboro;
+    font-size: 12px;
 }
 @media (max-width: 1024px) {
     .header-container .header-wrap .nav-wrap {

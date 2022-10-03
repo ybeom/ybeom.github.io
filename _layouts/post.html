@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="post-index-container">
+<article class="post-index-container">
     <header class="post-header-wrap">
         <div class="post-thumbnail">
             {% for image in site.static_files %} {% if image.path contains "assets/images/post" %} {% if image.path contains page.header.fileName %}{% if image.path contains '-th.' %}
@@ -19,4 +19,4 @@ layout: default
     </header>
     <article class="post-article-wrap">{{content}}</article>
     <footer class="post-footer-wrap"></footer>
-</div>
+</article>
