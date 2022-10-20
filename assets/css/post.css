@@ -8,15 +8,16 @@
     align-items: center;
 }
 .post-thumbnail {
-    width: 50%;
-    max-height: 400px;
+    width: 450px;
+    max-height: 450px;
     overflow: hidden;
     position: relative;
     border-radius: 8px;
     margin: 0 16px;
 }
 .post-thumbnail img {
-    width: 100%;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
 }
 .post-thumbnail:hover > .overlay-img {
