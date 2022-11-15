@@ -49,8 +49,8 @@ layout: default
             {% endfor %}
         </div>
 
+        {% for post in site.posts limit:4%} {% unless post == site.posts.first %}
         <div class="sub-post-item">
-            {% for post in site.posts limit:4%} {% unless post == site.posts.first %}
             <a href="{{post.url}}">
                 <div class="sub-thumbnail">
                     <div class="overlay-img"></div>
@@ -76,7 +76,8 @@ layout: default
                     </div>
                 </div>
             </a>
-            {% endunless %} {% endfor %}
         </div>
+
+        {% endunless %} {% endfor %}
     </div>
 </div>
