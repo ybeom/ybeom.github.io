@@ -3,20 +3,22 @@ layout: default
 ---
 
 <article class="post-index-container">
-    <header class="post-header-wrap">
-        <div class="post-thumbnail">
-            {% for image in site.static_files %} {% if image.path contains "assets/images/post" %} {% if image.path contains page.header.fileName %}{% if image.path contains '-th.' %}
-            <img src="{{image.path}}" alt="{{page.title}} 썸네일" />
-            {% endif %} {% endif %} {% endif %} {% endfor %}
-            <!-- <img src="/assets/images/default_post_thumbnail.png" alt="대표 이미지" /> -->
-            <div class="overlay-img"></div>
-        </div>
-        <div class="post-header-content">
-            <div class="post-tag"><a>{{page.tags}}</a></div>
-            <h1 class="post-title">{{page.title}}</h1>
-            <div class="post-date">{{page.date | date: "%Y년 %m월 %d일" }}</div>
-        </div>
-    </header>
-    <article class="post-article-wrap">{{content}}</article>
-    <footer class="post-footer-wrap"></footer>
+  <header class="post-header-wrap">
+    <div class="post-thumbnail">
+      {% for image in site.static_files %} {% if image.path contains "assets/images/post" %} {% if
+      image.path contains page.header.fileName %}{% if image.path contains '-th.' %}
+      <img src="{{image.path}}" alt="{{page.title}} 썸네일" />
+      {% endif %} {% endif %} {% endif %} {% endfor %}
+      <div class="overlay-img"></div>
+    </div>
+    <div class="post-header-content">
+      {% for tag in page.tags %}
+      <div class="post-tag"><a>{{tag}}</a></div>
+      {% endfor %}
+      <h1 class="post-title">{{page.title}}</h1>
+      <div class="post-date">{{page.date | date: "%Y년 %m월 %d일" }}</div>
+    </div>
+  </header>
+  <article class="post-article-wrap">{{content}}</article>
+  <footer class="post-footer-wrap"></footer>
 </article>
