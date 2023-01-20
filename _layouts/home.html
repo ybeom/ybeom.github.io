@@ -13,13 +13,19 @@ layout: default
     있습니다.<br />
     서울, 제주, 목포를 거쳐 변화를 만드는 다양한 기획과 비즈니스를 실험하고 현실로 만들어왔습니다.
   </div>
-  <!-- <div class="about-btn">
-        <button>Portfolio</button>
-        <button>About Me</button>
-    </div> -->
+  <div class="about-btn">
+    <button onclick="location.href='about'">About Me</button>
+    <button
+      onclick="location.href='https://bit.ly/%EC%99%80%EB%B9%84%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4'"
+    >
+      Portfolio
+    </button>
+  </div>
 </div>
 <div class="posts-wrap">
-  <h2 class="section-title">Latest Posts</h2>
+  <div class="posts-title">
+    <h2 class="section-title">Latest Posts</h2>
+  </div>
   <div class="posts-grid-container">
     <div class="main-post-item">
       {% for post in site.posts limit:1 %}
@@ -51,7 +57,7 @@ layout: default
       {% endfor %}
     </div>
 
-    {% for post in site.posts limit:4%} {% unless post == site.posts.first %}
+    {% for post in site.posts %} {% unless post == site.posts.first %}
     <div class="sub-post-item">
       <a href="{{post.url}}">
         <div class="sub-thumbnail">

@@ -20,5 +20,24 @@ layout: default
     </div>
   </header>
   <article class="post-article-wrap">{{content}}</article>
-  <footer class="post-footer-wrap"></footer>
+  <hr />
+  <footer class="post-footer-wrap">
+    {% if page.previous.url %} {% for tag in page.previous.tags%}
+    <button class="prev-post-btn" onclick="location.href='{{page.previous.url}}'">
+      <div class="prev-post-btn-head">이전 글</div>
+      <div class="post-tag"><a>{{tag}}</a></div>
+      {% endfor %}
+      <br />
+      <div class="prev-post-btn-title">{{page.previous.title}}</div>
+    </button>
+    {% endif %} {% if page.next.url %} {% for tag in page.next.tags%}
+    <button class="next-post-btn" onclick="location.href='{{page.next.url}}'">
+      <div class="next-post-btn-head">다음 글</div>
+      <div class="post-tag"><a>{{tag}}</a></div>
+      {% endfor %}
+      <br />
+      <div class="next-post-btn-title">{{page.next.title}}</div>
+    </button>
+    {% endif %}
+  </footer>
 </article>
